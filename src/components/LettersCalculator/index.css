@@ -1,0 +1,102 @@
+/* Write your code here. */
+.mainContainer {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+.subContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+.col1 {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding-left: 10px;
+}
+.col2 {
+  width: 50vw;
+}
+.calculateImg {
+  width: 50vw;
+}
+.heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  text-align: left;
+  width: 40vw;
+  font-size: 50px;
+}
+.labelEl {
+  color: #ffffff;
+  font-family: 'Roboto';
+  margin-bottom: 5px;
+}
+.inputEl {
+  width: 40vw;
+  height: 35px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+::placeholder {
+  color: rgb(212, 202, 202);
+}
+.noOfLetters {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 15px;
+  color: #1d976c;
+  font-family: 'Roboto';
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .subContainer {
+    flex-direction: column;
+  }
+  .col1 {
+    width: 70vw;
+    margin-bottom: 5px;
+  }
+  .heading {
+    text-align: center;
+    width: 70vw;
+    font-size: 30px;
+  }
+  .col2 {
+    margin-top: 5px;
+    order: -1;
+    width: 70vw;
+  }
+  .calculateImg {
+    width: 70vw;
+  }
+  .inputEl {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .col1 {
+    padding-left: 80px;
+  }
+  .heading {
+    width: 30vw;
+  }
+  .inputEl {
+    width: 25vw;
+  }
+}
